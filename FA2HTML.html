@@ -1,0 +1,59 @@
+<DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="FA2CSS.css">
+    </head>
+    <body>
+        <h1>Calculator</h1>
+        <input type="text" id="n1" placeholder = "Number 1">
+        <input type="text" id="n2" placeholder="Number 2"><br><br>
+        <button onclick="sumaccept()" id="but1">+</button>
+        <button onclick="difaccept()" id="but2">-</button><br>
+        <button onclick="prodaccept()" id="but3">*</button>
+        <button onclick="quotaccept()" id="but4">/</button><br>
+        <button onclick="modaccept()" id="but5">%</button>
+        <p id="cout">Results will be displayed here.</p>
+        <script>
+            function sumaccept() {
+                var num1 = parseFloat(document.getElementById("n1").value);
+                var num2 = parseFloat(document.getElementById("n2").value);
+                document.getElementById("cout").innerHTML = "The sum of " + num1 + " and " + num2 + " is " + sumfunc(num1, num2) + "." ;
+            }
+            function sumfunc(x, y) {
+                return x + y;
+            }
+            function difaccept() {
+                var num1 = parseFloat(document.getElementById("n1").value);
+                var num2 = parseFloat(document.getElementById("n2").value);
+                document.getElementById("cout").innerHTML = "The difference of " + num1 + " and " + num2 + " is " + diffunc(num1, num2) + "." ;;
+            }
+            function diffunc(x, y) {
+                return x - y;
+            }
+            function quotaccept() {
+                var num1 = parseFloat(document.getElementById("n1").value);
+                var num2 = parseFloat(document.getElementById("n2").value);
+                document.getElementById("cout").innerHTML = "The quotient of " + num1 + " and " + num2 + " is " + quotfunc(num1, num2) + "." ;;
+            }
+            function quotfunc(x, y) {
+                return x / y;
+            }
+            function prodaccept() {
+                var num1 = parseFloat(document.getElementById("n1").value);
+                var num2 = parseFloat(document.getElementById("n2").value);
+                document.getElementById("cout").innerHTML = "The product of " + num1 + " and " + num2 + " is " + prodfunc(num1, num2) + "." ;;
+            }
+            function prodfunc(x, y) {
+                return x * y;
+            }
+            function modaccept() {
+                var num1 = parseFloat(document.getElementById("n1").value);
+                var num2 = parseFloat(document.getElementById("n2").value);
+                document.getElementById("cout").innerHTML = "The modulus of " + num1 + " and " + num2 + " is " + modfunc(num1, num2) + "." ;;
+            }
+            function modfunc(x, y) {
+                return x % y;
+            }
+        </script>
+    </body>
+</html>

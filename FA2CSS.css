@@ -1,0 +1,28 @@
+body {
+    background-color: white;
+}
+h1 {
+    font-style: italic;
+    text-align: center;
+    
+}
+#n1 {
+    text-align: center;
+    margin-left: 39%;
+}
+#n2 {
+    text-align: center;
+}
+#but1 {
+    margin-left: 48.6%;
+}
+#but3 {
+    margin-left: 48.75%;
+}
+#but5 {
+    margin-left: 49.4%;
+}
+p {
+    font-style: italic;
+    text-align: center;
+}
